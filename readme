@@ -1,0 +1,24 @@
+<main일 때>
+git init
+ㄴ> 아예 깃허브에서 처음 레파지토리를 파고 거기다가 내 컴퓨터에 있는 파일들을 넣고 싶을 때
+git status
+ㄴ> 지금 깃 상태/위치
+git add .
+ㄴ> 다 올려버리기
+git commit -m "적고자 하는 메시지"
+git remote add origin "주소"
+git status
+git push -u -f origin main
+
+<branch일 때>
+(권한 받고)
+git checkout -b "만들고자 하는 branch명"
+git add "파일명"
+git commit -m "하고자 하는 코멘트"
+git push origin "본인 branch"
+git checkout main
+git pull
+dir(최종확인)
+
+## 순서는 add > commit > push > pull ##
+## 수정해야 하는 경우에는 pull > add > commit > push ##
