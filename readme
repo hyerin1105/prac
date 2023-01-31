@@ -1,10 +1,8 @@
 <main일 때>
-git init
-ㄴ> 아예 깃허브에서 처음 레파지토리를 파고 거기다가 내 컴퓨터에 있는 파일들을 넣고 싶을 때
-git status
-ㄴ> 지금 깃 상태/위치
-git add .
-ㄴ> 다 올려버리기
+git init ; github가 비어있는 경우에만 명령어 사용
+; 아예 깃허브에서 처음 레파지토리를 파고 거기다가 내 컴퓨터에 있는 파일들을 넣고 싶을 때
+git status ; 지금 깃 상태/위치
+git add . ; 다 올려버리기
 git commit -m "적고자 하는 메시지"
 git remote add origin "주소"
 git status
@@ -22,3 +20,19 @@ dir(최종확인)
 
 ## 순서는 add > commit > push > pull ##
 ## 수정해야 하는 경우에는 pull > add > commit > push ##
+<git 폴더가 없는 초반에만>
+git init
+git remote add
+git clone
+그 후 add > commit > push
+
+
+git checkout -b branch명 ; -b: 내가 찾는 브랜치명이 없으면 새로 만들겠다
+; 이미 만든 branch에 넣을 때는 -b 빼기
+tip) 새로 판 브랜치는 push 후 삭제
+ㄴ git branch -d branch명
+; 이유: 수정 사항이 적용된 main의 내용이 내가 새로 판 브랜치에는 적용이 안 되었기 때문
+
+
+
+## 원격 레파지토리: github, 로컬 레파지토리: computer
