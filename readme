@@ -15,8 +15,11 @@ git add "파일명"
 git commit -m "하고자 하는 코멘트"
 git push origin "본인 branch"
 git checkout main
+git branch -d 브랜치명
+(깃허브에서 merge 후)
 git pull
-dir(최종확인)
+git checkout -b 브랜치명
+dir ;최종확인
 
 ## 순서는 add > commit > push > pull ##
 ## 수정해야 하는 경우에는 pull > add > commit > push ##
